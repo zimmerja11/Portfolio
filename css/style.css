@@ -102,6 +102,7 @@ header .header-logo {
 	background-image: url("../pics/jz_logo_edit.png");
   	background-position: 50% 50%;
   	background-repeat: no-repeat;
+
 }
 
 .grid-item2 {
@@ -111,7 +112,7 @@ header .header-logo {
   	font-size: 15px;
 }
 
-.item2 h2 {
+.item2 h1 {
 	text-align: left;
   	color: black;
 }
