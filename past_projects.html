@@ -1,104 +1,148 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="pics/jz_logo_edit.png" />
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	<title>Past Research</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pics/jz_logo_edit.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Past Work</title>
+    <link href='https://fonts.googleapis.com/css?family=Chau Philomene One' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="jquery.flip.min.js"></script>
 </head>
 <body>
-
     <header>
-    	<a href="index.html" class="header-logo"><img src='pics/jz_logo_edit.png' alt='JZ Logo' height='75'/> Zimmer </a>
+        <a href="index.html" class="header-logo"><img src='pics/jz_logo_edit.png' alt='JZ Logo' class="header-pic"/> Zimmer </a>
+        <a class="skip-main" href="#main">Skip to main content</a>
         <nav class = "navigation">
             <ul>
-                <li><a href = "index.html">About</a></li><!--
-                --><li><a href = "resume.html">Resume</a></li><!--
-                --><li><a href = "past_projects.html" class="current">Projects</a></li><!--
-                --><li><a href = "past_experiences.html">Experience</a></li>
+                <li><a href = "index.html">About</a></li>
+                <li><a href = "resume.html">Resume</a></li>
+                <li><a href = "past_projects.html" class="current">Projects</a></li>
+                <li><a href = "past_experiences.html">Experience</a></li>
             </ul>
         </nav>
     </header>
+    <main id="main" tabindex="-1">
+		<h1 class='past_proj_head'>- Past Projects -</h1>
 
-	<h1> Past Projects</h1>
+		<div class='project' id="football">
+			<button class="accordion">Getting to the Pros: Predicting NFL Success from College Statistics </button>
+			<div class='project_contents'>
+				<h3 class='minor_head'> Introduction </h3>
+				<p>In this project, I seek to analyze the college and NFL statistics of recently drafted players to explore the relationship between college and professional success. The data is pulled from two different sources: the NFL csv was found on kaggle, while the college data is from a dropbox of csv’s - found on Reddit’s r/CFBAnalysis - containing single game statistics for all players from 2005 to 2013. For this reason, I limit my analysis to that decade. Furthermore, since football positions have wildly different statistics for measuring performance, I further limit the scope to a single position: Running Back. As a huge Detroit Lions fan, this position is of particular interest, as many fans want the team to draft a running back in this year’s NFL draft (2018).</p>
 
-	<h2>Getting to the Pros: Predicting NFL Success from College Statistics </h2>
+				<h3 class='minor_head'>Research Questions and Methodology:</h3>
+				<ol>
+					<li><b>Does having good college stats imply a higher likelihood of success in the NFL? Can this relationship be used to predict future NFL success for college players?</b>
+						<ol>
+							<li>Does this relationship differ for players who played against 'top' competition vs. second-tier and third-tier competition?
+							</li>
+							<li>Do better stats always lead to better draft positions?
+							</li>
+							<li>Methods: Correlation, Regression, Classification, Dimensionality Reduction (PCA), Clustering
+							</li>
+						</ol>
+					</li>
+					<li><b>What college statistics are better predictors of making a successful transition to the NFL?</b>
+						<ol>
+							<li>Pivot: What college statistics are the most important predictors of whether a player will be drafted to the NFL?
+							</li>
+							<li>Methods: Classification, Logistic Regression
+							</li>
+						</ol>
+					</li>
+				</ol>
+				<h3 class="report"><a href="zimmer_making_the_pros.pdf" class='view_report'>Click to View Full Report</a></h3>
+			</div>
+		</div>
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
 
-	<p>In this project, I sought to analyze the college and NFL statistics of recently drafted pro players to explore the relationship between college success and pro success.  While college statistics are viewed by many as a good indicator of next-level potential, this assumption does not always hold true. As a result, I'm interested in exploring the relationship between performance at the college level and performance at the professional level. Due to the vast amount of data, shifts in gameplay and draft methods over time, and limitations on data availability, I will limit the scope of this analysis to the decade from 2005 through 2013. Additionally, I will also be limiting this project to tackling only the running back position: as a fan of the Detroit Lions, this position is of particular interest to me, as many fans are calling for the team to draft a running back during this year's (2018) draft while disagreeing on which one to take and in which round.</p>
-
-	<h3>Research Questions:</h3>
-	<ol>
-		<li>Does having good college statistics imply a higher likelihood of success in the NFL
-			<ol>
-				<li>Does this relationship differ for players who played against ‘top’ college football competition vs. those who played against second and third-tier competition?</li>
-				<li>Does having better college stats always lead to better draft position?</li>
-			</ol>
-		<li>What statistics are better predictors of making a successful transition to the NFL?</li>
-	</ol>
-	<h3>Techniques &amp; Findings:</h3>
-	<ol>
-		<li>Q1: Predicting NFL Draft Position &amp; Success
-			<ol>
-				<li>Correlation &amp; OLS Regression (Non-normalized &amp; Z-Score Normalized Data)
-					<ol>
-						<li>Best Model: DrAV ~ CFB Rush TD + CFB Rush Yards + CFB Receptions + CFB Rush Fumbles</li>
-						<li>Predict DrAV, or the Approximate Value of a player for the team that drafted them (DrAV calculated by Pro Football Focus)</li>
-						<li>R-Squared: 0.117</li>
-					</ol>
-				</li>
-				<li>Classification (Random Forest &amp; Naïve-Bayes):
-					<ol>
-						<li>Best Model - Draft Round Classifier (Random Forest)
-							<ol>
-								<li>Predict round player is drafted in based on college stats</li>
-								<li>Accuracy: ~39.58%</li>
-								<li><img src='pics/Random_Forest_Draft_Round_Slide.jpg' alt='Draft Round Classifier Important Features' height='250'/></li>
-							</ol>
-						</li>
-					</ol>
-				</li>
-				<li>Other Techniques used:
-					<ol>
-						<li>Dimensionality Reduction (Principal Component Analysis)</li>
-						<li>K-Means Clustering (for draft rounds)</li>
-					</ol>
-				</li>
-				<li>Conclusions:
-					<ol>
-						<li> After much analysis, I was unable to reliably predict any NFL statistics from a player's statistical performance in college. Since my intention with this analysis was to use these models to predict NFL success/draft position for players, I conclude that my two datasets are ultimately not related enough to be able to accurately make these predictions, at least without more features.</li>
-					</ol>
-				</li>
-			</ol>
-		</li>
-		<li>Q2: Statistics That Are Better Predictors of Reaching the NFL
-			<ol>
-				<li>Classification (Random Forest &amp; Naïve Bayes):
-					<ol>
-						<li>Best Model - Pro Prediction Classifier (Random Forest)
-							<ol>
-								<li>Predict if a player will be drafted based on college stats</li>
-								<li>Accuracy: ~95.05%</li>
-								<li>Confusion Matrix: <img src='pics/confusion_matrix.jpg' alt='Pro Predictor Confusion Matrix' height='200'/></li>
-							</ol>
-						</li>
-					</ol>
-				</li>
-				<li>Logistic Regression
-					<ol>
-						<li>Model: wasDrafted (Dummy variable) ~ CFB Rush Attempts + CFB Rush Yards + CFB Rush TD + CFB Rush Fumble + CFB Receptions + CFB Receiving TD + Conference Level</li>
-						<li>10-fold cross validation average accuracy: ~94.8%</li>
-						<li><img src='pics/Log_Regress_Results.jpg' alt='Log Regression Results' height='250'></li>
-					</ol>
-				</li>
-				<li>Conclusion:
-					<ol>
-						<li>Checking the p-values of the independent variables included in the regression model, we see that all but receptions are below the threshold of 0.05. As a result, we can reject the null hypothesis and conclude that the other 6 independent variables - Number of rushing attempts, number of rushing yards, number of rushing touchdowns, number of rushing fumbles, number of receiving touchdowns, and their conference's competition level - have a significant influence on the dependent variable (whether the player was drafted or not). In conclusion, by analyzing the feature coefficients, we can say that the RB prospects most likely to be drafted are those playing in the Power 5 Conferences with high rushing yards and touchdowns and low number of fumbles on a low number of attempts, and a high number of catching touchdowns.</li>
-					</ol>
-				</li>
-			</ol>
-		</li>
-	</ol> 
-
+	for (i = 0; i < acc.length; i++) {
+  		acc[i].addEventListener("click", function() {
+    		this.classList.toggle("active");
+    		var project_contents = this.nextElementSibling;
+    		if (project_contents.style.display === "block") {
+      			project_contents.style.display = "none";
+      			project_contents.style.border = "none";
+    		} else {
+      			project_contents.style.display = "block";
+      			project_contents.style.border = "4px solid #FEC236";
+    		}
+  		});
+	}
+	</script>
+	</main>
+    <footer>
+        <div class="contact">Contact Me:<a href="https://www.linkedin.com/in/jacob-zimmer-7b6586112/" aria-label="linkedin"><i class="fab fa-linkedin big-icon" aria-hidden="true"></i><p>LinkedIn</p></a></div>
+    </footer>
 </body>
 </html>
+
+				
+				<!-- <h3 class='minor_head'>Methodology and Results:</h3>
+				<ol>
+					<p class="question">Q1: Predicting Draft Position and Pro Success
+						<ol>
+							<li>Correlation &amp; OLS Regression (Non-normalized &amp; Z-Score Normalized Data)
+								<ol>
+									<li>Best Model: DrAV ~ CFB Rush TD + CFB Rush Yards + CFB Receptions + CFB Rush Fumbles</li>
+									<li>Predict DrAV, or the Approximate Value of a player for the team that drafted them (DrAV calculated by Pro Football Focus)</li>
+									<li>R-Squared: 0.117</li>
+								</ol>
+							</li>
+							<li>Classification (Random Forest &amp; Naïve-Bayes):
+								<ol>
+									<li>Best Model - Draft Round Classifier (Random Forest)
+										<ol>
+											<li>Predict round player is drafted in based on college stats</li>
+											<li>Accuracy: ~39.58%</li>
+											<li><img src='pics/Random_Forest_Draft_Round_Slide.jpg' alt='Draft Round Classifier Important Features' height='250'/></li>
+										</ol>
+									</li>
+								</ol>
+							</li>
+							<li>Other Techniques used:
+								<ol>
+									<li>Dimensionality Reduction (Principal Component Analysis)</li>
+									<li>K-Means Clustering (for draft rounds)</li>
+								</ol>
+							</li>
+							<li>Conclusions:
+								<ol>
+									<li> After much analysis, I was unable to reliably predict any NFL statistics from a player's statistical performance in college. Since my intention with this analysis was to use these models to predict NFL success/draft position for players, I conclude that my two datasets are ultimately not related enough to be able to accurately make these predictions, at least without more features.</li>
+								</ol>
+							</li>
+						</ol>
+					</p>
+					<p class="question">Q2: Statistics That Are Better Predictors of Reaching the NFL
+						<ol>
+							<li>Classification (Random Forest &amp; Naïve Bayes):
+								<ol>
+									<li>Best Model - Pro Prediction Classifier (Random Forest)
+										<ol>
+											<li>Predict if a player will be drafted based on college stats</li>
+											<li>Accuracy: ~95.05%</li>
+											<li>Confusion Matrix: <img src='pics/confusion_matrix.jpg' alt='Pro Predictor Confusion Matrix' height='200'/></li>
+										</ol>
+									</li>
+								</ol>
+							</li>
+							<li>Logistic Regression
+								<ol>
+									<li>Model: wasDrafted (Dummy variable) ~ CFB Rush Attempts + CFB Rush Yards + CFB Rush TD + CFB Rush Fumble + CFB Receptions + CFB Receiving TD + Conference Level</li>
+									<li>10-fold cross validation average accuracy: ~94.8%</li>
+									<li><img src='pics/Log_Regress_Results.jpg' alt='Log Regression Results' height='250'></li>
+								</ol>
+							</li>
+							<li>Conclusion:
+								<ol>
+									<li>Checking the p-values of the independent variables included in the regression model, we see that all but receptions are below the threshold of 0.05. As a result, we can reject the null hypothesis and conclude that the other 6 independent variables - Number of rushing attempts, number of rushing yards, number of rushing touchdowns, number of rushing fumbles, number of receiving touchdowns, and their conference's competition level - have a significant influence on the dependent variable (whether the player was drafted or not). In conclusion, by analyzing the feature coefficients, we can say that the RB prospects most likely to be drafted are those playing in the Power 5 Conferences with high rushing yards and touchdowns and low number of fumbles on a low number of attempts, and a high number of catching touchdowns.</li>
+								</ol>
+							</li>
+						</ol>
+					</p>
+				</ol> -->

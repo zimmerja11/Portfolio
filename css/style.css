@@ -1,228 +1,25 @@
 
-@media screen and (min-width: 320px) {
-	
-	
-
-	.wrapper {
-		display:inline-block;
-		text-align: center;
-	}
-
-	.header-pic {
-	width: 10%;
-	vertical-align: bottom;
-	display: inline;
-	}
-
-	.navigation li{
-	text-decoration: none;
-	display:inline-block;
-	margin-right: 2%;
-	margin-left: 5%;
-	width: 10%;
-	}
-
-
-	.navigation nav{
-		text-align: right;
-	}
-
-	.navigation ul{
-		margin-bottom: 3%;
-		margin-right: 5%;
-		padding: 0;
-		font-family: "Helvetica", "Arial", sans-serif;
-	    font-weight: bold;
-	    text-align: right;
-	}
-
-	.navigation a{
-		text-decoration: none;
-	    border: 2px solid white;
-	    padding: 10%;
-	  	background: rgba(39, 109, 188, .9);
-	  	color: white;
-	  	border-radius: 4px 4px 4px 4px;
-	}
-
-	header {
-		width: 100%;
-		height: 100%;
-		/*text-align: right;
-		padding: 3% 0 0 3%;*/
-		background: linear-gradient(to left bottom, rgba(169, 255, 230, .3), rgba(0, 80, 144, .9));
-	}
-
-	.current{
-		text-transform: uppercase;
-	}
-
-	header .header-logo {
-		font-family: 'Chau Philomene One';
-		font-weight: 600;
-		letter-spacing: 4px;
-		font-size: 40px;
-		color: white;
-		display: inline;
-		padding: 5px 0 0 0;
-		text-decoration: none;
-		text-align: left;
-		font-style: italic
-		padding-left: 25px;
-	}
-
-	.header-pic {
-		width: 10%;
-		vertical-align: bottom;
-		display: inline;
-	}
-
-	.grid-item {
-		text-align: center;
-		background: #002C6E;
-		font-family: 'Chau Philomene One';
-	  	font-size: 22px;
-	  	box-sizing: border-box;
-	}
-
-	.grid-item img{
-		width: 50%;
-		height: auto;
-		box-sizing: border-box;
-	}
-
-	.grid-item p{
-		color: white;
-		box-sizing: border-box;
-	}
-
-	.pedernales {
-		transform: rotate(90deg);
-		box-sizing: border-box;
-	}
-
-	.item1 {
-		grid-column: 1;
-		grid-row: 1;
-		padding-top: 12px;
-		padding-right: 5px;
-		box-sizing: border-box;
-	}
-
-	.item2 {
-		grid-column: 2 / span 2;
-		grid-row: 1;
-		padding-top: 12px;
-		background-image: url("../pics/jz_logo_edit.png");
-	  	background-position: 50% 50%;
-	  	background-repeat: no-repeat;
-	  	box-sizing: border-box;
-
-	}
-
-	.grid-item2 {
-		text-align: left;
-	  	padding-left: 15px;
-	  	font-family: 'Chau Philomene One';
-	  	font-size: 15px;
-	  	box-sizing: border-box;
-	}
-
-	.item2 h1 {
-		text-align: left;
-	  	color: black;
-	  	box-sizing: border-box;
-	}
-
-	.item3 {
-		grid-column: 1;
-		grid-row: 2;
-		box-sizing: border-box;
-	}
-
-	.item4 {
-		grid-column: 2;
-		grid-row: 2;
-		vertical-align: bottom;
-		box-sizing: border-box;
-	}
-
-	.item5 {
-		grid-column: 3;
-		grid-row: 2;
-		box-sizing: border-box;
-	}
-
-	.headshot {
-		width: 70%;
-		height: auto;
-		box-sizing: border-box;
-	}
-
-
-	.travel {
-		align-content: center;
-		box-sizing: border-box;
-	}
-
-	footer i{
-		padding-left: 20px;
-		text-align: center;
-	}
-
-	.big-icon {
-		font-size:50px;
-		vertical-align: middle;
-	}
-
-	footer p {
-		color:white;
-		text-decoration: none;
-	}
-
-	.contact {
-		font-family: 'Chau Philomene One';
-	  	font-size: 12px;
-	  	text-decoration: none;
-	  	padding-top: 7px;
-	  	box-sizing: border-box;
-	}
-}
-
 @media screen and (min-width: 768px) {
-	
-	
 
-	.wrapper {
-	display: grid;
-	grid-template: 50% 50%;
-	text-align: center;
-	}
-
-	.header-pic {
-	width: 10%;
-	vertical-align: bottom;
-	display: inline;
+	.navigation{
+		grid-column: 2 / span 3;
+    	grid-row: 1;
+    	text-align: right;
 	}
 
 	.navigation li{
-	text-decoration: none;
-	display:inline-block;
-	margin-right: 2%;
-	margin-left: 5%;
-	width: 10%;
-	}
+		text-decoration: none;
+		display:inline;
+		margin-right: 2%;
+		margin-left: 5%;
 
-
-	.navigation nav{
-		text-align: right;
 	}
 
 	.navigation ul{
 		margin-bottom: 3%;
-		margin-right: 5%;
+		/*margin-right: 5%;*/
 		padding: 0;
-		font-family: "Helvetica", "Arial", sans-serif;
+		font-family: 'Tahoma', sans-serif;
 	    font-weight: bold;
 	    text-align: right;
 	}
@@ -230,8 +27,8 @@
 	.navigation a{
 		text-decoration: none;
 	    border: 2px solid white;
-	    padding: 10%;
-	  	background: rgba(39, 109, 188, .9);
+	    padding: 1%;
+	  	background: #002C6E;
 	  	color: white;
 	  	border-radius: 4px 4px 4px 4px;
 	}
@@ -239,17 +36,19 @@
 	header {
 		width: 100%;
 		height: 100%;
-		/*text-align: right;
-		padding: 3% 0 0 3%;*/
 		background: linear-gradient(to left bottom, rgba(169, 255, 230, .3), rgba(0, 80, 144, .9));
+		display: inline-grid;
+    	grid-template: 20% / 1fr 1fr 1fr;
+    	padding: 4px 4px 4px 4px;
 	}
 
 	.current{
 		text-transform: uppercase;
+		text-shadow: 1px 1px #F7D736;
 	}
 
 	header .header-logo {
-		font-family: 'Chau Philomene One';
+		font-family: 'Chau Philomene One', sans-serif;
 		font-weight: 600;
 		letter-spacing: 4px;
 		font-size: 40px;
@@ -258,38 +57,77 @@
 		padding: 5px 0 0 0;
 		text-decoration: none;
 		text-align: left;
-		font-style: italic
-		padding-left: 25px;
+		font-style: italic;
+		grid-column: 1;
+    	grid-row: 1;
 	}
 
 	.header-pic {
-		width: 10%;
-		vertical-align: bottom;
+		width: 20%;
+		vertical-align: middle;
 		display: inline;
+		padding-left: 5%;
+		padding-bottom: 3%;
+	}
+
+	a.skip-main {
+    	left:-999px;
+    	position:absolute;
+    	top:auto;
+    	width:1px;
+    	height:1px;
+    	overflow:hidden;
+    	z-index:-999;
+	}
+
+	a.skip-main:focus, a.skip-main:active {
+	    color: black;
+	    background-color:#FEC236;
+	    left: auto;
+	    top: auto;
+	    width: 30%;
+	    height: auto;
+	    overflow:auto;
+	    margin: 10px 35%;
+	    padding:5px;
+	    border-radius: 15px;
+	    border:4px solid #002C6E;
+	    text-align:center;
+	    font-size:1.2em;
+	    z-index:999;
+	}
+
+	/* Index.html */
+
+	.about{
+		text-shadow: 2px 2px #F7D736;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template: 20% 30% 30% 20%/50% 50%;
+		text-align: center;
 	}
 
 	.grid-item {
 		text-align: center;
 		background: #002C6E;
-		font-family: 'Chau Philomene One';
+		font-family: 'Chau Philomene One', sans-serif;
 	  	font-size: 22px;
 	  	box-sizing: border-box;
+	  	color: white;
 	}
 
 	.grid-item img{
+		margin-top: 8%;
 		width: 50%;
 		height: auto;
 		box-sizing: border-box;
 	}
 
-	.grid-item p{
-		color: white;
-		box-sizing: border-box;
-	}
 
 	.pedernales {
-		transform: rotate(90deg);
-		box-sizing: border-box;
+		transform: rotate(0deg);
 	}
 
 	.item1 {
@@ -304,66 +142,401 @@
 		grid-column: 2;
 		grid-row: 1;
 		padding-top: 12px;
-		background-image: url("../pics/jz_logo_edit.png");
+		background-image: url("../pics/jz_logo_edit_faded2.png");
 	  	background-position: 50% 50%;
 	  	background-repeat: no-repeat;
 	  	box-sizing: border-box;
-
+	  	color: black;
 	}
 
 	.grid-item2 {
 		text-align: left;
 	  	padding-left: 15px;
-	  	font-family: 'Chau Philomene One';
+	  	font-family: 'Chau Philomene One', sans-serif;
 	  	font-size: 15px;
-	  	box-sizing: border-box;
-	}
-
-	.item2 h1 {
-		text-align: left;
-	  	color: black;
-	  	box-sizing: border-box;
+	  	padding-bottom: 4%;
+	  	padding-right: 4%;
 	}
 
 	.item3 {
 		grid-column: 1 / span 2;
 		grid-row: 2;
-		box-sizing: border-box;
 	}
 
 	.item4 {
 		grid-column: 1 / span 2;
 		grid-row: 3;
-		vertical-align: bottom;
-		box-sizing: border-box;
 	}
 
 	.item5 {
 		grid-column: 1 / span 2;
 		grid-row: 4;
-		box-sizing: border-box;
 	}
 
 	.headshot {
-		width: 70%;
+		width: 80%;
 		height: auto;
 		box-sizing: border-box;
-	}
-
-
-	.travel {
-		align-content: center;
-		box-sizing: border-box;
-	}
-
-	footer i{
-		padding-left: 20px;
-		text-align: center;
+		padding-top: 35px;
 	}
 
 	.big-icon {
 		font-size:50px;
 		vertical-align: middle;
+		padding-left: 20px;
+		text-align: center;
+	}
+
+	footer p {
+		color: white;
+		text-decoration: none;
+	}
+
+	.contact {
+		font-family: 'Chau Philomene One', sans-serif;
+	  	font-size: 12px;
+	  	text-decoration: none;
+	  	padding-top: 3%;
+	  	padding-left: 1%;
+	  	box-sizing: border-box;
+	}
+
+	/* Resume.html */
+
+/*	.my_resume{
+		text-align: center;
+		font-family: 'Chau Philomene One', sans-serif;
+		font-size: 34px;
+		text-shadow: 2px 2px #F7D736;
+		padding-top: 1%;
+	}*/
+
+	.resume_img {
+		display: block;
+		width: 60%;
+		margin: auto auto;
+		margin-bottom: 20px;
+	}
+
+	/* past_experiences.html */
+
+	.exp_head {
+		text-align: center;
+		font-family: 'Chau Philomene One', sans-serif;
+		font-size: 40px;
+		text-shadow: 1px 1px #F7D736;
+		padding-top: 5%;
+	}
+
+	.exp_head2 {
+		text-shadow: 2px 1px #F49F0A;/* ;*/
+		color: white;
+		background: rgba(0, 80, 144);/*;*/
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	.flip {
+    	height: 50%;
+    	width: auto;
+    	margin: auto auto;
+    	padding-top: 8%;
+	}
+
+	.flip img {
+		display: block;
+    	margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
+    	height: auto;
+	}
+
+	.flip .back {
+    	background: #FEC236;
+    	font-family: 'Tahoma', sans-serif;
+	  	font-size: 20px;
+    	color: black;
+    	text-align: center;
+    	padding: 1% 1% 1% 1%;
+	}
+
+	/* past_projects.html */
+
+	.past_proj_head{
+		text-align: center;
+		font-family: 'Chau Philomene One', sans-serif;
+		font-size: 40px;
+		text-shadow: 2px 2px #F7D736;
+		padding-top: 2%;
+		padding-bottom: 1%;
+	}
+
+	.project {
+		background: #FEC236;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 20px;
+    	color: black;
+	}
+
+	.minor_head {
+		font-family: 'Tahoma', sans-serif;
+		text-shadow: 2px 1px white;
+		color: #002C6E;
+	}
+
+	.report{
+		padding-left: 35%;
+		padding-top: 3%;
+		padding-bottom: 1%;
+	} 
+
+	.view_report {
+		text-align: center;
+		font-family: 'Tahoma', sans-serif;
+		color: white;
+		text-shadow: 1px 1px #E28A07;
+		background: #002C6E;
+		border: 2px solid white;
+	    padding: 1%;
+	    border-radius: 4px 4px 4px 4px;
+	}
+
+	.project li{
+		padding: 4px 0 0 4px;
+	}
+
+	.question {
+		font-weight: bold;
+	}
+
+	.accordion {
+		text-align: center;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 40px;
+		text-shadow: 2px 2px #E28A07;
+		color: white;
+		background-color: #002C6E;
+		padding-top: 1%;
+		padding-bottom: 1%;
+    	border: none;
+		cursor: pointer;
+		width: 100%;
+		outline: none;
+		transition: 0.4s;
+	}
+
+	.active{ 
+		background: #002C6E;
+		border: 4px solid #FEC236;
+	}
+
+	.project_contents {
+		padding: 0% 2% 1% 2%;
+		display: none;
+		background-color: #FEC236;
+		overflow: hidden;
+	}
+
+}
+
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+
+@media screen and (min-width: 922px) {
+
+	.navigation{
+		grid-column: 2 / span 3;
+    	grid-row: 1;
+    	text-align: right;
+	}
+
+	.navigation li{
+		text-decoration: none;
+		display:inline-block;
+		margin-right: 2%;
+		margin-left: 5%;
+		width: 10%;
+
+	}
+
+	.navigation ul{
+		margin-bottom: 3%;
+		margin-right: 5%;
+		padding: 0;
+		font-family: 'Tahoma', sans-serif;
+	    font-weight: bold;
+	    text-align: right;
+	}
+
+	.navigation a{
+		text-decoration: none;
+	    border: 2px solid white;
+	    padding: 10%;
+	  	background: #002C6E;
+	  	color: white;
+	  	border-radius: 4px 4px 4px 4px;
+	}
+
+	header {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left bottom, rgba(169, 255, 230, .3), rgba(0, 80, 144, .9));
+		display: inline-grid;
+    	grid-template: 20% / 1fr 1fr 1fr 1fr;
+    	padding: 4px 4px 4px 4px;
+	}
+
+	.current{
+		text-transform: uppercase;
+		text-shadow: 1px 1px #F7D736;
+	}
+
+	header .header-logo {
+		font-family: 'Chau Philomene One', sans-serif;
+		font-weight: 600;
+		letter-spacing: 4px;
+		font-size: 40px;
+		color: white;
+		display: inline;
+		padding: 5px 0 0 0;
+		text-decoration: none;
+		text-align: left;
+		font-style: italic;
+		padding-left: 25px;
+		grid-column: 1;
+    	grid-row: 1;
+	}
+
+	.header-pic {
+		width: 20%;
+		vertical-align: middle;
+		display: inline;
+		padding-left: 5%;
+		padding-bottom: 3%;
+	}
+
+	a.skip-main {
+    	left:-999px;
+    	position:absolute;
+    	top:auto;
+    	width:1px;
+    	height:1px;
+    	overflow:hidden;
+    	z-index:-999;
+	}
+
+	a.skip-main:focus, a.skip-main:active {
+	    color: black;
+	    background-color:#FEC236;
+	    left: auto;
+	    top: auto;
+	    width: 30%;
+	    height: auto;
+	    overflow:auto;
+	    margin: 10px 35%;
+	    padding:5px;
+	    border-radius: 15px;
+	    border:4px solid #002C6E;
+	    text-align:center;
+	    font-size:1.2em;
+	    z-index:999;
+	}
+
+	/* Index.html */
+
+	.about{
+		text-shadow: 2px 2px #F7D736;
+	}
+
+	.wrapper {
+		display: grid;
+		grid-template: 47% / 33% 33% 33%;
+		text-align: center;
+	}
+
+	.grid-item {
+		text-align: center;
+		background: #002C6E;
+		font-family: 'Chau Philomene One', sans-serif;
+	  	font-size: 22px;
+	  	box-sizing: border-box;
+	  	color: white;
+	}
+
+	.grid-item img{
+		margin-top: 12%;
+		width: 50%;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	.grid-item2 {
+		text-align: left;
+	  	padding-left: 15px;
+	  	font-family: 'Chau Philomene One', sans-serif;
+	  	font-size: 20px;
+	  	box-sizing: border-box;
+	  	color: black;
+	  	grid-column: 2 / span 2;
+		grid-row: 1;
+		padding-top: 10px;
+		padding-bottom: 10%;
+	  	box-sizing: border-box;
+	  	background-image: url("../pics/jz_logo_edit_faded2.png");
+	  	background-position: 50% 50%;
+	  	background-repeat: no-repeat;
+	}
+
+	.grid-item .sf{
+		width: 70%;
+		height: auto;
+		padding-bottom: 2%;
+	}
+
+	.pedernales {
+		transform: rotate(0deg);
+	}
+
+	.item1 {
+		grid-column: 1;
+		grid-row: 1;
+		padding-top: 12px;
+		padding-right: 5px;
+		box-sizing: border-box;
+	}
+
+	.item3 {
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	.item4 {
+		grid-column: 3;
+		grid-row: 2;
+	}
+
+	.item5 {
+		grid-column: 2;
+		grid-row: 2;
+		padding-top: 12%;
+	}
+
+	.headshot {
+		width: 80%;
+		height: auto;
+		box-sizing: border-box;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+
+	.big-icon {
+		font-size:50px;
+		vertical-align: middle;
+		padding-left: 20px;
+		text-align: center;
 	}
 
 	footer p {
@@ -372,196 +545,151 @@
 	}
 
 	.contact {
-		font-family: 'Chau Philomene One';
+		font-family: 'Chau Philomene One', sans-serif;
 	  	font-size: 12px;
 	  	text-decoration: none;
-	  	padding-top: 7px;
+	  	padding-top: 3%;
+	  	padding-left: 1%;
 	  	box-sizing: border-box;
 	}
-}
-
-@media screen and (min-width: 922px) {
-
-.navigation li{
-	text-decoration: none;
-	display:inline-block;
-	margin-right: 2%;
-	margin-left: 5%;
-	width: 10%;
-
-}
-
-.navigation nav{
-	text-align: right;
-}
-
-.navigation ul{
-	margin-bottom: 3%;
-	margin-right: 5%;
-	padding: 0;
-	font-family: "Helvetica", "Arial", sans-serif;
-    font-weight: bold;
-    text-align: right;
-}
-
-.navigation a{
-	text-decoration: none;
-    border: 2px solid white;
-    padding: 10%;
-  	background: rgba(39, 109, 188, .9);
-  	color: white;
-  	border-radius: 4px 4px 4px 4px;
-}
-
-header {
-	width: 100%;
-	height: 100%;
-	/*text-align: right;
-	padding: 3% 0 0 3%;*/
-	background: linear-gradient(to left bottom, rgba(169, 255, 230, .3), rgba(0, 80, 144, .9));
-}
-
-.current{
-	text-transform: uppercase;
-}
-
-header .header-logo {
-	font-family: 'Chau Philomene One';
-	font-weight: 600;
-	letter-spacing: 4px;
-	font-size: 40px;
-	color: white;
-	display: inline;
-	padding: 5px 0 0 0;
-	text-decoration: none;
-	text-align: left;
-	font-style: italic
-	padding-left: 25px;
-}
-
-.header-pic {
-	width: 10%;
-	vertical-align: bottom;
-	display: inline;
-}
-
-.wrapper {
-	display: grid;
-	grid-template: 30% 30% 30%;
-	text-align: center;
-}
-
-.grid-item {
-	text-align: center;
-	background: #002C6E;
-	font-family: 'Chau Philomene One';
-  	font-size: 22px;
-  	box-sizing: border-box;
-}
-
-.grid-item img{
-	width: 50%;
-	height: auto;
-	box-sizing: border-box;
-}
-
-.grid-item p{
-	color: white;
-	box-sizing: border-box;
-}
-
-.pedernales {
-	transform: rotate(90deg);
-	box-sizing: border-box;
-}
-
-.item1 {
-	grid-column: 1;
-	grid-row: 1;
-	padding-top: 12px;
-	padding-right: 5px;
-	box-sizing: border-box;
-}
-
-.item2 {
-	grid-column: 2 / span 2;
-	grid-row: 1;
-	padding-top: 12px;
-	background-image: url("../pics/jz_logo_edit.png");
-  	background-position: 50% 50%;
-  	background-repeat: no-repeat;
-  	box-sizing: border-box;
-
-}
-
-.grid-item2 {
-	text-align: left;
-  	padding-left: 15px;
-  	font-family: 'Chau Philomene One';
-  	font-size: 15px;
-  	box-sizing: border-box;
-}
-
-.item2 h1 {
-	text-align: left;
-  	color: black;
-  	box-sizing: border-box;
-}
-
-.item3 {
-	grid-column: 1;
-	grid-row: 2;
-	box-sizing: border-box;
-}
-
-.item4 {
-	grid-column: 2;
-	grid-row: 2;
-	vertical-align: bottom;
-	box-sizing: border-box;
-}
-
-.item5 {
-	grid-column: 3;
-	grid-row: 2;
-	box-sizing: border-box;
-}
-
-.headshot {
-	width: 70%;
-	height: auto;
-	box-sizing: border-box;
-}
 
 
-.travel {
-	align-content: center;
-	box-sizing: border-box;
-}
 
-footer i{
-	padding-left: 20px;
-	text-align: center;
-}
+	/* resume.html */
 
-.big-icon {
-	font-size:50px;
-	vertical-align: middle;
-}
+/*	.my_resume{
+		text-align: center;
+		font-family: 'Chau Philomene One', sans-serif;
+		font-size: 34px;
+		text-shadow: 2px 2px #F7D736;
+		padding-top: 1%;
+	}*/
 
-footer p {
-	color:white;
-	text-decoration: none;
-}
+	.resume_img {
+		display: block;
+		width: 60%;
+		margin: auto auto;
+		margin-bottom: 30px;
+	}
 
-.contact {
-	font-family: 'Chau Philomene One';
-  	font-size: 12px;
-  	text-decoration: none;
-  	padding-top: 7px;
-  	box-sizing: border-box;
-}
+
+	/* past_experiences.html */
+
+	.exp_head {
+		text-align: center;
+		font-family: 'Chau Philomene One', sans-serif;
+		font-size: 40px;
+		text-shadow: 2px 2px #F7D736;
+		padding-top: 5%;
+	}
+
+	.exp_head2 {
+		text-shadow: 2px 1px #E28A07;/* ;*/
+		color: white;
+		background: rgba(0, 80, 144);/*;*/
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	.flip {
+    	height: 50%;
+    	width: auto;
+    	margin: auto auto;
+    	padding-top: 8%;
+	}
+
+	.flip img {
+		display: block;
+    	margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
+    	height: auto;
+	}
+
+	.flip .back {
+    	background: #FEC236;
+    	font-family: 'Tahoma', sans-serif;
+	  	font-size: 20px;
+    	color: black;
+    	text-align: center;
+    	padding: 1% 1% 1% 1%;
+	}
+
+	/* past_projects.html */
+
+	.past_proj_head{
+		text-align: center;
+		font-family: 'Chau Philomene One', sans-serif;
+		font-size: 40px;
+		text-shadow: 2px 2px #F7D736;
+		padding-top: 2%;
+		padding-bottom: 1%;
+	}
+
+	.project {
+		background: #FEC236;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 20px;
+    	color: black;
+	}
+
+	.minor_head {
+		font-family: 'Tahoma', sans-serif;
+		text-shadow: 2px 1px white;
+		color: #002C6E;
+	}
+
+	.report{
+		padding-left: 35%;
+		padding-top: 3%;
+		padding-bottom: 1%;
+	} 
+
+	.view_report {
+		text-align: center;
+		font-family: 'Tahoma', sans-serif;
+		color: white;
+		text-shadow: 1px 1px #E28A07;
+		background: #002C6E;
+		border: 2px solid white;
+	    padding: 1%;
+	    border-radius: 4px 4px 4px 4px;
+	}
+
+	.project li{
+		padding: 4px 0 0 4px;
+	}
+
+	.question {
+		font-weight: bold;
+	}
+
+	.accordion {
+		text-align: center;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 40px;
+		text-shadow: 2px 2px #E28A07;
+		color: white;
+		background-color: #002C6E;
+		padding-top: 1%;
+		padding-bottom: 1%;
+    	border: none;
+		cursor: pointer;
+		width: 100%;
+		outline: none;
+		transition: 0.4s;
+	}
+
+	.active{ 
+		background: #002C6E;
+		border: 4px solid #FEC236;
+	}
+
+	.project_contents {
+		padding: 0% 2% 1% 2%;
+		display: none;
+		background-color: #FEC236;
+		overflow: hidden;
+	}
 
 }
-
-
