@@ -203,13 +203,13 @@
 
 	/* Resume.html */
 
-/*	.my_resume{
+	.my_resume{
 		text-align: center;
 		font-family: 'Chau Philomene One', sans-serif;
 		font-size: 34px;
 		text-shadow: 2px 2px #F7D736;
 		padding-top: 1%;
-	}*/
+	}
 
 	.resume_img {
 		display: block;
@@ -325,7 +325,7 @@
 		transition: 0.4s;
 	}
 
-	.active{ 
+	.active, .accordion:hover{ 
 		background: #002C6E;
 		border: 4px solid #FEC236;
 	}
@@ -557,13 +557,13 @@
 
 	/* resume.html */
 
-/*	.my_resume{
+	.my_resume{
 		text-align: center;
 		font-family: 'Chau Philomene One', sans-serif;
 		font-size: 34px;
 		text-shadow: 2px 2px #F7D736;
 		padding-top: 1%;
-	}*/
+	}
 
 	.resume_img {
 		display: block;
@@ -680,7 +680,7 @@
 		transition: 0.4s;
 	}
 
-	.active{ 
+	.active, .accordion:hover{ 
 		background: #002C6E;
 		border: 4px solid #FEC236;
 	}
