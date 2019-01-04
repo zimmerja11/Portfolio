@@ -633,6 +633,14 @@
     	color: black;
 	}
 
+	#football.project {
+		margin-top: 6px;
+	}
+
+	#music.project {
+		margin-top: 6px;
+	}
+
 	.minor_head {
 		font-family: 'Tahoma', sans-serif;
 		text-shadow: 2px 1px white;
