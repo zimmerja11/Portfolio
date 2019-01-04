@@ -31,7 +31,7 @@
 			<button class="accordion">Automatically Rating Discussion Quality of Reddit Content</button>
 			<div class='project_contents'>
 				<h3 class='minor_head'> Abstract </h3>
-				<p>Online   discussion   forums   are   social   cy-berspace  channels  that  allow  for  the  distri-bution of user-generated content and peer-to-peer  discourse  surrounding  a  shared,  speci-fied topic.   While these forums contain largeamounts of valuable information on a varietyof topics, content ranking algorithms on thesesites are often flawed, resulting in sub-optimalfiltering  of  content  that  pushes  low-qualitycontent to the forefront.  Current ranking sys-tems  place  too  much  emphasis  on  ’easy-to-measure’  metrics  that  do  not  reflect  the  truequality of a content submission.</p>
+				<p>Online   discussion   forums   are   social   cyberspace  channels  that  allow  for  the  distribution of user-generated content and peer-to-peer  discourse  surrounding  a  shared,  specified topic.   While these forums contain large amounts of valuable information on a variety of topics, content ranking algorithms on these sites are often flawed, resulting in sub-optimal filtering  of  content  that  pushes  low-quality submissions to the forefront.  Current ranking systems  place  too  much  emphasis  on  ’easy-to-measure’  metrics  that  do  not  reflect  the  true quality of a content submission.</p>
 
 				<h3 class="report"><a href="Zimmer_Scoring_Reddit_Discussion.pdf" class='view_report'>Click to View Full Report</a></h3>
 			</div>
@@ -98,6 +98,9 @@
 			</div>
 		</div>
 
+		<div class='project' id="capstone">
+			<button class="fake_accordion">Coming Soon: Recommender System for Scientific Research Articles</button>
+		</div>
 	<script>
 	var acc = document.getElementsByClassName("accordion");
 	var i;
@@ -118,72 +121,11 @@
 	</script>
 	</main>
     <footer>
-        <div class="contact">Contact Me:<a href="https://www.linkedin.com/in/jacob-zimmer-7b6586112/" aria-label="linkedin"><i class="fab fa-linkedin big-icon" aria-hidden="true"></i><p>LinkedIn</p></a></div>
+    	<div  class="footwrap">
+    		<div class = "contact head">Contact Me:</div>
+        	<div class="contact linked"><a href="https://www.linkedin.com/in/jacob-zimmer-7b6586112/" aria-label="linkedin"><i class="fab fa-linkedin big-icon" aria-hidden="true"></i><p>LinkedIn</p></a></div>
+        	<div class="contact git"> <a href="https://github.com/zimmerja11" aria-label="github"><i class="fab fa-github big-icon" aria-hidden="true"></i><p>GitHub</p></a></div>
+        </div>
     </footer>
 </body>
 </html>
-
-				
-				<!-- <h3 class='minor_head'>Methodology and Results:</h3>
-				<ol>
-					<p class="question">Q1: Predicting Draft Position and Pro Success
-						<ol>
-							<li>Correlation &amp; OLS Regression (Non-normalized &amp; Z-Score Normalized Data)
-								<ol>
-									<li>Best Model: DrAV ~ CFB Rush TD + CFB Rush Yards + CFB Receptions + CFB Rush Fumbles</li>
-									<li>Predict DrAV, or the Approximate Value of a player for the team that drafted them (DrAV calculated by Pro Football Focus)</li>
-									<li>R-Squared: 0.117</li>
-								</ol>
-							</li>
-							<li>Classification (Random Forest &amp; Naïve-Bayes):
-								<ol>
-									<li>Best Model - Draft Round Classifier (Random Forest)
-										<ol>
-											<li>Predict round player is drafted in based on college stats</li>
-											<li>Accuracy: ~39.58%</li>
-											<li><img src='pics/Random_Forest_Draft_Round_Slide.jpg' alt='Draft Round Classifier Important Features' height='250'/></li>
-										</ol>
-									</li>
-								</ol>
-							</li>
-							<li>Other Techniques used:
-								<ol>
-									<li>Dimensionality Reduction (Principal Component Analysis)</li>
-									<li>K-Means Clustering (for draft rounds)</li>
-								</ol>
-							</li>
-							<li>Conclusions:
-								<ol>
-									<li> After much analysis, I was unable to reliably predict any NFL statistics from a player's statistical performance in college. Since my intention with this analysis was to use these models to predict NFL success/draft position for players, I conclude that my two datasets are ultimately not related enough to be able to accurately make these predictions, at least without more features.</li>
-								</ol>
-							</li>
-						</ol>
-					</p>
-					<p class="question">Q2: Statistics That Are Better Predictors of Reaching the NFL
-						<ol>
-							<li>Classification (Random Forest &amp; Naïve Bayes):
-								<ol>
-									<li>Best Model - Pro Prediction Classifier (Random Forest)
-										<ol>
-											<li>Predict if a player will be drafted based on college stats</li>
-											<li>Accuracy: ~95.05%</li>
-											<li>Confusion Matrix: <img src='pics/confusion_matrix.jpg' alt='Pro Predictor Confusion Matrix' height='200'/></li>
-										</ol>
-									</li>
-								</ol>
-							</li>
-							<li>Logistic Regression
-								<ol>
-									<li>Model: wasDrafted (Dummy variable) ~ CFB Rush Attempts + CFB Rush Yards + CFB Rush TD + CFB Rush Fumble + CFB Receptions + CFB Receiving TD + Conference Level</li>
-									<li>10-fold cross validation average accuracy: ~94.8%</li>
-									<li><img src='pics/Log_Regress_Results.jpg' alt='Log Regression Results' height='250'></li>
-								</ol>
-							</li>
-							<li>Conclusion:
-								<ol>
-									<li>Checking the p-values of the independent variables included in the regression model, we see that all but receptions are below the threshold of 0.05. As a result, we can reject the null hypothesis and conclude that the other 6 independent variables - Number of rushing attempts, number of rushing yards, number of rushing touchdowns, number of rushing fumbles, number of receiving touchdowns, and their conference's competition level - have a significant influence on the dependent variable (whether the player was drafted or not). In conclusion, by analyzing the feature coefficients, we can say that the RB prospects most likely to be drafted are those playing in the Power 5 Conferences with high rushing yards and touchdowns and low number of fumbles on a low number of attempts, and a high number of catching touchdowns.</li>
-								</ol>
-							</li>
-						</ol>
-					</p>
-				</ol> -->

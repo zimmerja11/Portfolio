@@ -554,14 +554,29 @@
 
 	.contact {
 		font-family: 'Chau Philomene One', sans-serif;
-	  	font-size: 12px;
+	  	font-size: 20px;
 	  	text-decoration: none;
-	  	padding-top: 3%;
-	  	padding-left: 1%;
+	  	padding-top: 5%;
+	  	padding-left: 2%;
 	  	box-sizing: border-box;
 	}
 
+	.footwrap {
+		display: grid;
+		grid-template-columns: 10% 15% 15%;
+	}
 
+	#head.footwrap {
+		grid-column: 1;
+	}
+
+	#linked.footwrap {
+		grid-column: 2;
+	}
+
+	#git.footwrap {
+		grid-column: 3;
+	}
 
 	/* resume.html */
 
@@ -649,6 +664,10 @@
 		margin-top: 6px;
 	}
 
+	#capstone.project {
+		margin-top: 6px;
+	}
+
 	.minor_head {
 		font-family: 'Tahoma', sans-serif;
 		text-shadow: 2px 1px white;
@@ -697,6 +716,27 @@
 	}
 
 	.active, .accordion:hover{ 
+		background: #002C6E;
+		border: 4px solid #FEC236;
+	}
+
+	.fake_accordion{
+		text-align: center;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 40px;
+		text-shadow: 2px 2px #E28A07;
+		color: white;
+		background-color: #002C6E;
+		padding-top: 1%;
+		padding-bottom: 1%;
+    	border: none;
+		cursor: pointer;
+		width: 100%;
+		outline: none;
+		transition: 0.4s;
+	}
+
+	.active, .fake_accordion:hover{ 
 		background: #002C6E;
 		border: 4px solid #FEC236;
 	}
