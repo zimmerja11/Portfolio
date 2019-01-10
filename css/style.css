@@ -293,7 +293,7 @@
 	}
 
 	.report{
-		padding-left: 35%;
+		padding-left: 33%;
 		padding-top: 3%;
 		padding-bottom: 1%;
 	} 
@@ -664,6 +664,10 @@
 		margin-top: 6px;
 	}
 
+	#portfolio.project {
+		margin-top: 6px;
+	}
+
 	#capstone.project {
 		margin-top: 6px;
 	}
@@ -675,7 +679,7 @@
 	}
 
 	.report{
-		padding-left: 35%;
+		padding-left: 33%;
 		padding-top: 3%;
 		padding-bottom: 1%;
 	} 
